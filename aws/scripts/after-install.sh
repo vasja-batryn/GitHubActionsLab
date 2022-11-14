@@ -3,7 +3,7 @@ set -xe
 
 
 # Copy war file from S3 bucket to tomcat webapp folder
-aws s3 cp s3://githubactionslab-webappdeploymentbucket-1utua80nliqf9
+aws s3 cp s3://githubactionslab-webappdeploymentbucket-1utua80nliqf9/SpringBootHelloWorldExampleApplication.war /usr/local/tomcat9/webapps/SpringBootHelloWorldExampleApplication.war
 
 
 # Ensure the ownership permissions are correct.
